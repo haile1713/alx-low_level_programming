@@ -4,21 +4,21 @@
 * You can only use the putchar
 * Return: 0
 */
-int main(void)
+int main (void)
 {
 int lw = 'a';
 while (lw <= 'z')
 {
-if(lw == 'e' || lw == 'q')
+if (lw == 'e' || lw == 'q')
 {
 lw += 1;
 }
 else
 {
-putchar(lw);
+putchar (lw);
 lw += 1;
 }
 }
-putchar('\n');
+putchar ('\n');
 return (0);
 }
