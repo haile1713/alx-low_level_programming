@@ -9,7 +9,7 @@ int main(void)
 int lw = 'a';
 while (lw <= 'z')
 {
- if(lw == 'e' || lw == 'q')
+if(lw == 'e' || lw == 'q')
 {
 lw += 1;
 }
