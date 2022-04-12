@@ -6,6 +6,7 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 int count;
@@ -47,4 +48,4 @@ fib2_half2 = half2;
 }
 printf("\n");
 return (0);
-}    
+}
