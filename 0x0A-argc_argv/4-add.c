@@ -1,45 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include "holberton.h"
 
 /**
- * main - Program that takes in all integer arguments and returns the sum
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
+ *main - entry point
+ *
+ *Description: Adds positive numbers
+ *
+ *@argc: amount of arguments passed through the program
+ *@argv: pointer that contains the arrays of the arguments
+ *
+ *Return: the sum of the numbers, if no number is passed then print 0, if a
+ *number has symbols that are not digit then print Error and return 1
  */
-
 int main(int argc, char *argv[])
 {
-	int i, j, length, sum;
-	char *ptr;
+	int i, j, sum = 0;
 
-	if (argc < 2)
+	if (argc == 1)
+	{
 		printf("0\n");
+	}
 	else
 	{
-		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
-			ptr = argv[i];
-			length = strlen(ptr);
-
-			for (j = 0; j < length; j++)
+			for (j = 0; argv[i][j] != 0; j++)
 			{
-				if (isdigit(*(ptr + j)) == 0)
+				if (argv[i][j] > 58 || argv[i][j] < 47)
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-
-			sum += atoi(argv[i]);
+			sum = sum + atoi(argv[i]);
 		}
-
-	printf("%d\n", sum);
+		printf("%d\n", sum);
 	}
-return (0);
+	return (0);
 }
-

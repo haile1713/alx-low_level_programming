@@ -1,19 +1,23 @@
 #include <stdio.h>
-#include "holberton.h"
+#include <stdlib.h>
 
 /**
- * main - Prints all arguments passed into main
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 0
+ *main - entry point
+ *
+ *Description: prints all the arguments separated by a new line
+ *
+ *@argc: amount of arguments passed through the program
+ *@argv: pointer that contains the arrays of the arguments
+ *
+ *Return: 0
  */
-
 int main(int argc, char *argv[])
 {
 	int i;
 
 	for (i = 0; i < argc; i++)
-		printf("%s\n", argv[i]);
-return (0);
+	{
+	printf("%s\n", argv[i]);
+	}
+	return (0);
 }
-
