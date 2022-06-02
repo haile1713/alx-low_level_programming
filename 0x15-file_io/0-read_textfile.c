@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 ssize_t read_textfile(const char *filename, size_t letters)
 {
   ssize_t file, let, w;

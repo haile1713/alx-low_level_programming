@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 int main(int argc, char *argv[])
 {
   int file_from, file_to;
